@@ -1,1 +1,83 @@
-<h1>Hello, This is lukongzhang!</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        /* 背景样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* 玻璃感卡片 */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 头像 */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 { margin: 10px 0; font-size: 24px; }
+        p { font-size: 14px; opacity: 0.8; margin-bottom: 30px; }
+
+        /* 导航按钮 */
+        .links a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="avatar">
+        
+        <h1>lukongzhang</h1>
+        <p>探索科技，热爱生活</p>
+
+        <div class="links">
+            <a href="https://github.com/你的用户名" target="_blank">我的 GitHub</a>
+            <a href="mailto:你的邮箱@example.com">联系我</a>
+            <a href="#" onclick="alert('项目建设中...')">个人项目</a>
+            <a href="#" onclick="alert('还没有写博客哦')">我的博客</a>
+        </div>
+    </div>
+
+</body>
+</html>
